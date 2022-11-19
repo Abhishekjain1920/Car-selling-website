@@ -1,0 +1,902 @@
+
+
+html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.site-header {
+    position: relative;
+    z-index: 999;
+    padding: 10px 0;
+}
+
+.hm-banner-container {
+    background-image: url(../../images/hm_banner_img.jpg);
+    background-size: cover;
+    background-position: 0 40%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -92px;
+    background-color: #1e222b;
+}
+
+.hm-banner-container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(30, 34, 43, 1) 0%, rgba(30, 34, 43, 1) 25%, rgba(30, 34, 43, 0.5) 100%);
+}
+
+nav.navbar {
+    display: flex;
+    height: 70px;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.navbar-nav {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    font-weight: 400;
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+ul.navbar-nav li.nav-item.contact-number {
+    color: #f93a3a;
+    font-weight: 600;
+}
+
+ul.navbar-nav li.nav-item span {
+    font-size: 0.8rem;
+    color: #adadad;
+    display: block;
+    font-size: .8rem;
+    font-weight: 300;
+    margin-bottom: .3rem;
+}
+
+ul.navbar-nav li.nav-item a {
+    text-decoration: none;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-right button.navbar-toggler {
+    background: none;
+    border: 0;
+    color: #fff;
+}
+
+.navbar-right a.nav-search span {
+    font-size: 28px;
+}
+
+.home-page nav.navbar,
+.home-page nav.navbar a {
+    color: #fff;
+}
+
+.hm-banner {
+    position: relative;
+    z-index: 99;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    color: #fff;
+    min-height: 70vh;
+}
+
+.hm-banner h1 {
+    font-weight: 300;
+}
+
+.sellCar-slide h4 {
+    font-weight: 300;
+    color: #ADADAD;
+}
+
+.sellCar-form-option-content {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sellCar-form-option-content button.btn.btn-primary {
+    top: calc(50% - 25px);
+    background: #F93A3A;
+    border: 0;
+    width: auto;
+    height: 50px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.sellCar-form-option-content button.btn.btn-arrow {
+    position: absolute;
+    right: -20px;
+    top: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+}
+
+.sellCar-form-option {
+    display: flex;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+
+}
+.sell-slide-2{
+    display: none;
+}
+.sell-slide-3{
+    display: none;
+}
+.sellCar-form-option.sell-slide-1 {
+    justify-content: center;
+}
+
+.sellCar-form-option .input-block {
+    border-right: 1px solid #ddd;
+    padding: 0 20px;
+    flex: 0 0 25%;
+    box-sizing: border-box;
+}
+
+.sellCar-form-option .input-block .input-labels {
+    cursor: pointer;
+}
+
+.sellCar-form-option .input-block:last-child {
+    border-right: 0;
+}
+
+.sellCar-formContent {
+    width: 100%;
+    text-align: center;
+}
+
+.sellCar-form-option .input-block label {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.sellCar-form-option .input-block p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    line-height: 32px;
+}
+
+.sellCar-form-option .input-block input.input-text {
+    border: 1px solid #ddd;
+    padding: 7px 10px;
+    margin-top: 4px;
+    border-radius: 5px;
+}
+
+.cust-dropdown-popover {
+    position: absolute;
+    left: 0;
+    background: #fff;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    box-shadow: 0px 4px 33px rgb(0 0 0 / 25%);
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    top: calc(100% + 4px);
+}
+
+.cust-dropdown-popover.is-visible {
+    display: block;
+}
+
+.sellCar-form-option .otp-verificatio {
+    display: flex;
+}
+
+.sellCar-form-option .otp-verificatio p.otp-message {
+    margin: 0;
+    font-size: .8rem;
+    line-height: 40px;
+}
+
+.sellCar-form-option .otp-verificatio p.otp-message strong {
+    display: block;
+}
+
+.sellCar-form-option .otp-verificatio button.btn.btn-primary.btn-submit {
+    min-width: 100px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.sellCar-form-option .otp-verificatio .input-block {
+    border-right: 0;
+}
+
+ul.cust-dropdown-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    box-sizing: border-box;
+}
+
+ul.cust-dropdown-menu>li {
+    flex: 0 0 49%;
+    padding: 5px 20px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background: #F5F5F5;
+    border-radius: 8px;
+    line-height: 2rem;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+ul.slides-counts {
+    list-style: none;
+    display: flex;
+    max-width: 200px;
+    margin: 20px auto;
+    justify-content: space-between;
+    padding: 0;
+}
+
+
+.sellCar-slides.slide2 .slides-counts li:first-child {
+    background-color: #86d497;
+}
+
+.sellCar-slides.slide3 .slides-counts li:first-child,
+.sellCar-slides.slide3 .slides-counts li:nth-child(2) {
+    background-color: #86d497;
+}
+
+ul.slides-counts li {
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.banner-whyUs-points {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: .8rem;
+    margin: 2rem 0;
+}
+
+.banner-whyUs-points .point {
+    max-width: 360px;
+    color: #F6F6F6;
+    display: flex;
+    gap: 20px;
+}
+
+.banner-whyUs-points .point span.icon {
+    width: 160px;
+}
+
+.banner-whyUs-points .point strong {
+    display: block;
+    font-weight: 600;
+    font-size: .9rem;
+    margin-bottom: 0.4rem;
+    color: #fff;
+}
+
+.banner-whyUs-points .point span.icon img {
+    height: 46px;
+}
+
+.hm-offers-container {
+    background: linear-gradient(180deg, rgba(161, 183, 214, 1) 0%, rgba(196, 214, 240, 1) 25%);
+}
+
+.hm-offers {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.hm-offers .hm-offer {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.hm-offers .hm-offer img {
+    width: 100%;
+    display: block;
+}
+
+.hm-car-list-container {
+    padding: 4rem 0;
+}
+
+h2.section-title {
+    margin: 0 0 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.car-list .car-col {
+    border-radius: 20px;
+    max-width: 230px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 15%);
+}
+
+.car-list .car-col .car-image {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+}
+
+.car-list .car-col .car-image img {
+    max-width: 100%;
+    display: block;
+}
+
+.car-list .car-col span.special-tag {
+    position: absolute;
+    background-color: #F93A3A;
+    /* background-image: url(../../imagesspecial_icon.svg); */
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 8px 5px;
+    color: #fff;
+    font-size: .7rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 5px 10px 5px 30px;
+    top: 10px;
+    left: 20px;
+}
+
+.car-list .car-col .car-info {
+    padding: 1.3rem 2rem;
+}
+
+.car-list .car-col .car-info p.car-name {
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+.car-list .car-col .price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.car-list .car-col .price span.regular-price.old-price {
+    text-decoration: line-through;
+    color: #000;
+}
+
+.car-list .car-col .price span.offer-price,
+.car-list .car-col .price span.regular-price {
+    color: #f93a3a;
+    font-weight: 600;
+}
+
+.car-list .car-col ul.car-attributes {
+    font-size: .7rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.car-list .car-col ul.car-attributes span.icon {
+    background: #F2F2F2;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 0.6rem;
+    box-sizing: border-box;
+}
+
+.car-list .car-col ul.car-attributes {
+    margin-bottom: 0;
+}
+
+.faq-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.faq-list .faq-content {
+    border: 1px solid #C7C7C7;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.faq-list .faq-content .faq-question {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.faq-list .faq-content .faq-question span {
+    color: #BDBDBD;
+    font-size: 2rem;
+}
+
+.faq-list .faq-content .faq-answer {
+    font-weight: 300;
+    font-size: .9rem;
+    margin: 0;
+    height: 0;
+    padding-top: 0;
+    overflow: hidden;
+    transition: .6s all;
+}
+
+.faq-list .faq-content.open .faq-question {}
+
+.faq-list .faq-content.open .faq-answer {
+    height: auto;
+    padding-top: 10px;
+}
+
+.testimonials-container {
+    position: relative;
+    padding: 4rem 0;
+}
+
+.testimonials-container:after {
+    content: '';
+    background-image: url(../../images/wave_bg.svg);
+    background-repeat: no-repeat;
+    background-position: 0 -2px;
+    width: 100%;
+    height: 78%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-size: 100%;
+    z-index: 0;
+    background-color: #C4D6F0;
+    min-height: 210px;
+}
+
+.testimonials-container .container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+}
+
+.testimonials-list {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    gap: 60px;
+    padding-top: 120px;
+}
+
+.testimonial {
+    max-width: 50%;
+    background: #fff;
+    border-radius: 11px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 15%);
+    padding: 2rem;
+    text-align: center;
+}
+
+.testimonial-image {
+    width: 260px;
+    height: 180px;
+    margin: -8rem auto 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.testimonial p.content {
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+}
+
+.testimonials-container h4 {
+    font-size: 2rem;
+    font-weight: 300;
+    max-width: 320px;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+}
+
+footer.site-footer {
+    background: #1F222B;
+    padding: 4rem 0;
+    color: #fff;
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+footer.site-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content {
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+.footer-content .footer-about {
+    width: 25%;
+}
+
+.footer-right {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-right>* {
+    flex: 1;
+}
+
+ul.footer-links a {
+    display: block;
+    padding: 8px 0;
+}
+
+.footer-address span.material-icons {
+    color: #575757;
+    font-size: 20px;
+}
+
+.footer-address p {
+    display: flex;
+    gap: 15px;
+}
+
+ul.social-links {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+
+
+/*-----Mobile Media Query ------*/
+
+@media (max-width:992px) {
+    ul.navbar-nav li {
+        display: none;
+    }
+
+    ul.navbar-nav li.nav-item.contact-number {
+        display: block;
+    }
+    .sellCar-form-option {
+        flex-wrap: wrap;
+        width: 96%;
+        margin: 0 auto;
+        padding: 1rem 3rem 1rem 1rem;
+    }
+
+    .sellCar-form-option .input-block {
+        flex: 0 0 50%;
+    }
+
+    .sellCar-form-option-content button.btn.btn-arrow {
+        position: absolute;
+        right: 0rem;
+    }
+    .sellCar-form-option .input-block:nth-child(2n+0) {
+        border-right: 0;
+    }
+    .hm-offers {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .car-list {
+        justify-content: center;
+    }
+    .hm-banner h1,h2.section-title {
+        text-align: center;
+    }
+    .faq-list {
+        padding: 0 1rem;
+    }
+    .testimonials-container .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials-container h4 {
+        margin: 0;
+        text-align: center;
+        padding: 0;
+    }
+    .testimonials-list {
+        gap: 8rem;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 2rem 0 2rem;
+    }
+    .testimonial {
+        max-width: 100%;
+        padding: 1rem;
+    }
+    .testimonial-image {
+        height: auto;
+        max-width: 100%;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-content .footer-about {
+        width: auto;
+        margin: 0 2rem;
+        text-align: center;
+    }
+    ul.social-links {
+        justify-content: center;
+    }
+    .footer-right {
+        flex-direction: column;
+        padding: 0 2rem;
+        text-align: center;
+        gap: 0;
+    }
+    ul.footer-links {
+        display: flex;
+        gap: 0.6rem;
+        justify-content: center;
+    }
+    .banner-whyUs-points {
+        box-sizing: border-box;
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+}
